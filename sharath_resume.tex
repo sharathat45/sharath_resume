@@ -137,7 +137,7 @@
         \item \textbf{Programming languages}: C, C++, Python, System Verilog, Regex, Makefiles, ARM, RISC-V, MIPS assembly
         \item \textbf{Tools}: Gem5, Cadence Virtuoso, Eagle CAD, VS code, Vim, Git, Perforce, GDB
         \item \textbf{Parallel Comp Arch}: MOESI, MSIF, Update based protocols (Firefly, Dragon), Memory Consistency Models
-        \item \textbf{SoC Arch}: Distrubuted Shared Memory, Interconnect Networks \& Topologies, CUMA, NUMA, COMA Arch
+        \item \textbf{SoC Arch}: Distributed Shared Memory, Interconnect Networks \& Topologies, CUMA, NUMA, COMA Arch
         \item \textbf{Parallel Programming}: CUDA, MPI, Pthreads
         
         % \item \textbf{FPGA tools}: Altera Cyclone (Intel Quartus prime sw), Xilinx KRIA (Vivado sw), experience in Emulation Build flow
@@ -150,6 +150,20 @@
 %Experience
 \vspace{-0.1cm}
 \section{Work Experience}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+    \textbf{AMD} (Memory Subsystem Engineer) Santa Clara, CA & \hfill {\small June 2024 - Present} \\[2.75pt]
+    \multicolumn{2}{@{}X@{}}
+    {
+        \begin{minipage}[t]{\linewidth}
+            \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=3pt]
+                \item RTL performance analysis \& microbenchmarking for Infinity Fabric composed of Interconnect NW, Memory Controller.
+                \item Theoretical analysis of mem system optimizations, develop-maintain IP debug tools for performance bottleneck debug.
+                \item Worked on AMD's cutting edge products like EPYC, MI400's memory subsystem IP's driving innovation.
+            \end{itemize}
+        \end{minipage}
+    }
+\end{tabularx}
+\vspace{0.1cm}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
     \textbf{AMD} (Intern) Boxborough, MA & \hfill {\small May 2023 - Aug 2023} \\[2.75pt]
@@ -205,32 +219,33 @@
 \vspace{-0.1cm}
 \section{Projects}
 
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+    \textbf{Speculative Coherency Modelling in Distributed Shared Memory} & \hfill {\small Jan 2024 - Present} \\[2.75pt]
+    \multicolumn{2}{@{}X@{}}
+    {
+        \begin{minipage}[t]{\linewidth}
+            \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=3pt]
+                \item Performance modelling of \textbf{Dynamic Self Invalidation} and \textbf{Last Touch Prediction} protocols in cache architecture.
+                \item Implemented with DSM \textbf{MOESI directory protocol} for scalable nodes in Gem5 using ruby framework in C++.
+                \item Benchmarked Splash3 applications and achieved an average \textbf{speedup of 28\% in DSI and 32\% in LTP}.
+            \end{itemize}
+        \end{minipage}
+    }  
+\end{tabularx}
+\vspace{0.1cm}
+
 % \begin{tabularx}{\linewidth}{ @{}l r@{} }
-%     \textbf{DSI abd LTP - Performance Modelling } & \hfill {\small Jan 2024 - Present} \\[2.75pt]
+%     \textbf{AlexNET - Convolutional Neural Network implementation } & \hfill {\small Jan 2024 - Present} \\[2.75pt]
 %     \multicolumn{2}{@{}X@{}}
 %     {
 %         \begin{minipage}[t]{\linewidth}
 %             \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=3pt]
-%                 \item Acceleration of convolution, gemm and max pool operations with optimization for run time in CUDA.
 %                 \item Acceleration of convolution, gemm and max pool operations with optimization for run time in CUDA.
 %             \end{itemize}
 %         \end{minipage}
 %     }  
 % \end{tabularx}
 % \vspace{0.1cm}
-
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-    \textbf{AlexNET - Convolutional Neural Network implementation } & \hfill {\small Jan 2024 - Present} \\[2.75pt]
-    \multicolumn{2}{@{}X@{}}
-    {
-        \begin{minipage}[t]{\linewidth}
-            \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=3pt]
-                \item Acceleration of convolution, gemm and max pool operations with optimization for run time in CUDA.
-            \end{itemize}
-        \end{minipage}
-    }  
-\end{tabularx}
-\vspace{0.1cm}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
     \textbf{Load Value Predictor Performance Modelling} (Alpha 21264) \href{https://github.com/sharathat45/load_value_predictor/tree/lvp_v1}{[\underline{git}]} 
@@ -264,22 +279,22 @@
 \end{tabularx}
 \vspace{0.1cm}
 
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-    \textbf{Multi Core Processor design} \href{https://gitfront.io/r/Sharath/YQcLhKyPxPYD/CPU-desgin/}{[\underline{git}]} & \hfill {\small Jan 2023 - May 2023} \\[2.75pt]
-    \multicolumn{2}{@{}X@{}}
-    {
-        \begin{minipage}[t]{\linewidth}
-            \begin{itemize}[nosep, after=\strut, leftmargin=2em, itemsep=3pt]
-                \item Constructed multicore, split cache, pipelined MIPS processor with cache coherence in System Verilog.
-                \item Incorporated MSI protocol, Branch Predictor with BTB and achieved speed of around \textbf{60 MHz} after Synthesis.
-                \item Designed cache coherency, bus controller \& Read-Modify-Write functionality for multithreading.
-                % \item Validated functionality of processor through assembly program simulations in QuestaSim and on FPGA.
-                % \item Built from scratch, starting with ALU using interfaces, testbench, packages, and functional units. 
-            \end{itemize}
-        \end{minipage}
-    }  
-\end{tabularx}
-\vspace{0.1cm}
+% \begin{tabularx}{\linewidth}{ @{}l r@{} }
+%     \textbf{Multi Core Processor design} \href{https://gitfront.io/r/Sharath/YQcLhKyPxPYD/CPU-desgin/}{[\underline{git}]} & \hfill {\small Jan 2023 - May 2023} \\[2.75pt]
+%     \multicolumn{2}{@{}X@{}}
+%     {
+%         \begin{minipage}[t]{\linewidth}
+%             \begin{itemize}[nosep, after=\strut, leftmargin=2em, itemsep=3pt]
+%                 \item Constructed multicore, split cache, pipelined MIPS processor with cache coherence in System Verilog.
+%                 \item Incorporated MSI protocol, Branch Predictor with BTB and achieved speed of around \textbf{60 MHz} after Synthesis.
+%                 \item Designed cache coherency, bus controller \& Read-Modify-Write functionality for multithreading.
+%                 % \item Validated functionality of processor through assembly program simulations in QuestaSim and on FPGA.
+%                 % \item Built from scratch, starting with ALU using interfaces, testbench, packages, and functional units. 
+%             \end{itemize}
+%         \end{minipage}
+%     }  
+% \end{tabularx}
+% \vspace{0.1cm}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
     \textbf{Hardware Acceleration of Neural Network Inference} \href{https://github.com/sharathat45/Vector-dot-product}{[\underline{git}]} & \hfill {\small Aug 2022 - Dec 2022} \\[2.75pt]
